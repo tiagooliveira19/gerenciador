@@ -25,6 +25,8 @@ code {
     display: flex;
 }
 
+/* Style */
+
 .menu {
     background: #384150;
     color: #FFFFFF;
@@ -102,6 +104,15 @@ code {
     display: none;
 }
 
+.links {
+    color: #FFFFFF;
+}
+
+.img-perfil {
+    width: 30% !important;
+    border-radius: 110px;
+}
+
 /* Grid */
 
 .w-100 {
@@ -124,9 +135,27 @@ code {
     width: 15% !important;
 }
 
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.ml-50 {
+    margin-left: 50px !important;
+}
+
 .pl-50 {
     padding-left: 50px !important;
 }
+
+/* Util */
 
 .margin-auto {
     margin-left: auto;
@@ -147,22 +176,6 @@ code {
 
 .oculto {
     display: none !important;
-}
-
-.mt-100 {
-    margin-top: 100px !important;
-}
-
-.ml-auto {
-    margin-left: auto;
-}
-
-.ml-10 {
-    margin-left: 10px !important;
-}
-
-.ml-50 {
-    margin-left: 50px !important;
 }
 
 .pointer {

@@ -1,6 +1,6 @@
 <?php
 
-    $select_usuarios = 'SELECT id, nome, idade, estado, biografia, data_criacao FROM usuario ';
+    $select_usuarios = 'SELECT id, nome, idade, estado, biografia, data_criacao FROM usuarios ';
     $result = mysqli_query($conexao, $select_usuarios);
     $qtd_registros = mysqli_num_rows($result);
 ?>
@@ -40,11 +40,11 @@
                             <td><?php echo mb_strimwidth($usuario->biografia, 0, 50, '...'); ?></td>
                             <td><?php echo date('d/m/Y', strtotime($usuario->data_criacao)); ?></td>
                             <td>
-                                <a href="index.php?action=editar-produto&id=<?php echo $usuario->id; ?>">
+                                <a href="index.php?action=editar-usuario&id=<?php echo $usuario->id; ?>">
                                     <span class="links pointer" title="Editar"><i class="fas fa-edit"></i></span>
                                 </a>
 
-                                <a href="/app/validacoes/exclusao/excluir_produto.php?id=<?php echo $usuario->id; ?>">
+                                <a href="/app/validacoes/exclusao/excluir_usuario.php?id=<?php echo $usuario->id; ?>">
                                     <span class="links pointer ml-10" title="Deletar"><i class="fas fa-trash-alt"></i></span>
                                 </a>
                             </td>

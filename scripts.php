@@ -17,7 +17,7 @@
 
     $(document).ready(function () {
 
-        new SlimSelect({
+        /* new SlimSelect({
             select: '.select-categorias',
             placeholder: 'Selecione uma categoria'
         });
@@ -25,7 +25,7 @@
         new SlimSelect({
             select: '.select-categorias-edicao',
             placeholder: 'Selecione uma categoria'
-        });
+        }); */
 
         $(".money").inputmask( 'currency', {
             "autoUnmask": true,
@@ -42,19 +42,12 @@
         // Verifica se o action e o id estão setados para mudar de página
         if ('<?php echo $action; ?>' !== '' && '<?php echo $id; ?>' !== '') {
 
-            if ('<?php echo $action; ?>' === 'editar-produto') {
+            if ('<?php echo $action; ?>' === 'editar-usuario') {
 
-                $('#conteudo-pagina-inicial, #conteudo-usuarios, #conteudo-categorias').fadeOut('slow', function () {
-                    $('.produtos-edicao').removeClass('oculto').fadeIn('slow');
-                    $('#pagina-inicial, #categorias').removeClass('item-menu-ativo');
+                $('#conteudo-pagina-inicial, #conteudo-usuarios').fadeOut('slow', function () {
+                    $('.usuarios-edicao').removeClass('oculto').fadeIn('slow');
+                    $('#pagina-inicial').removeClass('item-menu-ativo');
                     $('#usuarios').addClass('item-menu-ativo');
-                });
-            } else {
-
-                $('#conteudo-pagina-inicial, #conteudo-usuarios, #conteudo-categorias').fadeOut('slow', function () {
-                    $('.categorias-edicao').removeClass('oculto').fadeIn('slow');
-                    $('#pagina-inicial, #usuarios').removeClass('item-menu-ativo');
-                    $('#categorias').addClass('item-menu-ativo');
                 });
             }
         }
@@ -72,6 +65,10 @@
 
             if ('<?php echo $msg; ?>' === 'exclusao') {
                 swal("", 'Exclusão realizada com sucesso!', "success");
+            }
+
+            if ('<?php echo $msg; ?>' === 'erro') {
+                swal("", 'Houve algum erro durante a execução. Por favor, tente novamente!', "error");
             }
         }
     });
