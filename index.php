@@ -18,9 +18,12 @@
 <body>
 
 <div class="container-fluid">
+
+    <?php include 'pages/includes/navbar.php'; ?>
+
     <div class="row">
         <div class="col-md-12 main">
-            <div class="col-md-2 menu">
+            <!-- <div class="col-md-2 menu">
                 <div class="col-md-12 item-menu item-menu-ativo" id="pagina-inicial">
                     <div class="col-md-1 tarja"></div>
                     <div class="col-md-11 descricao">
@@ -35,15 +38,15 @@
                     </div>
                 </div>
                 <div class="col-md-12 menu-footer"></div>
-            </div>
+            </div> -->
 
-            <div class="col-md-10 conteudo">
+            <div class="col-md-12 conteudo">
 
-                <div class="row oculto pagina-inicial">
+                <div class="row pagina-inicial">
                     <?php include 'pages/pagina-inicial.php'; ?>
                 </div>
 
-                <div class="row usuarios">
+                <div class="row oculto usuarios">
                     <?php include 'pages/usuarios.php'; ?>
                 </div>
 

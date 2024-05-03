@@ -20,17 +20,17 @@
 
 ?>
 
-<div id="conteudo-edicao-produto">
+<div id="conteudo-edicao-produto" class="mb-5">
 
     <div class="col-md-12 w-90 mt-3 cabecalho">
         <label class="cabecalho-label">Edição Usuário</label>
     </div>
 
-    <div class="col-md-10 mt-5">
+    <div class="col-md-12 mt-5">
 
-        <div class="col-md-8 margin-auto">
+        <div class="col-md-10 mx-auto">
 
-            <form class="mt-100" autocomplete="off" method="post" action="/app/validacoes/edicao/editar_usuario.php">
+            <form class="mt-3" autocomplete="off" method="post" action="/app/validacoes/edicao/editar_usuario.php">
 
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
 

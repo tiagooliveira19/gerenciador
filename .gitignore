@@ -1,4 +1,4 @@
 # Configurações IDE
 .idea/
 .vscode/
-uploads/img_usuarios/
+uploads/img_usuarios/*

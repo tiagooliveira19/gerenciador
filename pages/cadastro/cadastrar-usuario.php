@@ -4,11 +4,11 @@
         <label class="cabecalho-label">Cadastrar Usuário</label>
     </div>
 
-    <div class="col-md-10 mt-5">
+    <div class="col-md-12 mt-5">
 
-        <div class="col-md-8 margin-auto">
+        <div class="col-md-10 mx-auto">
 
-            <form class="mt-100" autocomplete="off" enctype="multipart/form-data" method="post" action="/app/validacoes/cadastro/cadastrar_usuario.php">
+            <form class="mt-5" autocomplete="off" enctype="multipart/form-data" method="post" action="/app/validacoes/cadastro/cadastrar_usuario.php">
 
                 <div class="row">
                     <div class="col">

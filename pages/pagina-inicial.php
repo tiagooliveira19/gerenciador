@@ -3,7 +3,7 @@
         <label class="cabecalho-label">Página Inicial</label>
     </div>
 
-    <div class="col-md-10 margin-auto mt-5">
+    <div class="col-md-10 mx-auto mt-5">
 
         <div class="row">
             <h5>Gerenciador de Usuários</h5>
@@ -14,7 +14,7 @@
                 <b>Seja bem-vindo ao Sistema!</b>
             </p>
             <p>
-                Aqui você gerencia todo o processo de cadastro, listagem, edição e exclusão de usuários.<br>
+                Esta é uma página no formato <i><b>onepage</b></i>. Aqui você gerencia todo o processo de cadastro, listagem, edição e exclusão de usuários.<br>
                 Para mais informações contate-nos!
             </p>
 

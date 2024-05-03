@@ -9,8 +9,8 @@ $(document).ready(function () {
         $(this).addClass('item-menu-ativo');
 
         $('.usuarios, .usuarios-cadastro, .usuarios-edicao').fadeOut('fast');
-        $('.pagina-inicial').removeClass('oculto').fadeIn('slow');
-        $('#conteudo-pagina-inicial').fadeIn('slow');
+        $('.pagina-inicial').removeClass('oculto').fadeIn('fast');
+        $('#conteudo-pagina-inicial').fadeIn('fast');
     });
 
     $('#usuarios').on('click', function () {
@@ -18,8 +18,8 @@ $(document).ready(function () {
         $(this).addClass('item-menu-ativo');
 
         $('.pagina-inicial, .usuarios-cadastro, .usuarios-edicao').fadeOut('fast');
-        $('.usuarios').removeClass('oculto').fadeIn('slow');
-        $('#conteudo-usuarios').fadeIn('slow');
+        $('.usuarios').removeClass('oculto').fadeIn('fast');
+        $('#conteudo-usuarios').fadeIn('fast');
     });
 
     $('#' + paginaInicial).on('mouseover', function () {

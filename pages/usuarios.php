@@ -10,7 +10,7 @@
         <label class="cabecalho-label">Usuários</label>
     </div>
 
-    <div class="col-md-10 margin-auto mt-5">
+    <div class="col-md-10 mx-auto mt-5">
         <table class="table table-striped table-dark">
 
             <thead>
@@ -62,7 +62,7 @@
         </table>
     </div>
 
-    <div class="col-md-10 margin-auto mt-5">
+    <div class="col-md-10 mx-auto mt-5">
         <div class="col-md-6 float-end">
             <button type="button" class="btn btn-dark float-end" id="btn-cadastrar-usuarios">Cadastrar Usuários</button>
         </div>
