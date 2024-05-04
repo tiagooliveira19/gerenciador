@@ -137,7 +137,7 @@
                     $('.endereco').removeClass('oculto').fadeIn('slow');
 
                 } else if (resultadoCEP.erro){
-                    swal("", 'Erro! CEP não encontrado.', "warning");
+                    swal("", 'Algo de errado! CEP não encontrado.', "warning");
                 }
             });
         }

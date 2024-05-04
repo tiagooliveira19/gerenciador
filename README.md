@@ -1,7 +1,7 @@
 ### What is this repository for? ###
 
 * Project Name: gerenciador
-* Quick summary: CRUD e aplicação gerenciador de usuários, utilizando <code>php</code> no backend, <code>css, html, bootstrap e jquery</code> no frontend
+* Quick summary: CRUD e aplicação gerenciador de usuários, utilizando <code>php</code> no backend, <code>css, html, bootstrap e jquery</code> no frontend e <code>mysql</code> no banco de dados
 * Version: 1.0
 
 ### How do I get set up? ###

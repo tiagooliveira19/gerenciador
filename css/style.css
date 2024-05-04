@@ -1,3 +1,7 @@
+html, .main {
+    background: #EEEEEE;
+}
+
 body {
     font-family: Tahoma;
 }
@@ -22,10 +26,6 @@ code {
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-
-.main {
-    background: #EEEEEE;
 }
 
 /* Navbar */
