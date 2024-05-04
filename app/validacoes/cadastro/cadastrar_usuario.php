@@ -17,7 +17,7 @@
     $imagem_upload = null;
 
     // Se houver o upload da imagem
-    if ($imagem) {
+    if ($imagem['name'] && $imagem['tmp_name']) {
 
         // var_dump(is_dir($diretorio)); die();
 

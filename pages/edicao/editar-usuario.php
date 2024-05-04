@@ -19,20 +19,19 @@
         $imagem = $usuario->imagem;
         $data_criacao = date('d/m/Y', strtotime($usuario->data_criacao));
     }
-
 ?>
 
 <div id="conteudo-edicao-produto" class="mb-5">
 
     <div class="col-md-12 w-90 mt-3 cabecalho">
-        <label class="cabecalho-label">Edição Usuário</label>
+        <label class="cabecalho-label">Edição Usuário - <?php echo $nome ?: ''; ?></label>
     </div>
 
     <div class="col-md-12 mt-5">
 
         <div class="col-md-10 mx-auto">
 
-            <form class="mt-3" autocomplete="off" method="post" action="/app/validacoes/edicao/editar_usuario.php">
+            <form class="mt-3" autocomplete="off" enctype="multipart/form-data" method="post" action="/app/validacoes/edicao/editar_usuario.php">
 
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
 
@@ -87,6 +86,10 @@
                 </div>
 
                 <div class="row mt-2">
+                    <div class="col-6">
+                        <input type="file" class="form-control" name="imagem" id="imagem" placeholder="Imagem Perfil">
+                    </div>
+
                     <div class="col-6">
                         <input type="text" class="form-control" name="data_criacao" id="data_criacao" title="Data Criação" placeholder="Data Criação"
                                value="<?php echo $data_criacao ?: ''; ?>" readonly disabled>

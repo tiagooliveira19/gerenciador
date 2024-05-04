@@ -5,8 +5,10 @@ $(document).ready(function () {
 
     // Comportamento menu
     $('#pagina-inicial').on('click', function () {
-        $('#usuarios').removeClass('item-menu-ativo');
-        $(this).addClass('item-menu-ativo');
+        // $('#usuarios').removeClass('item-menu-ativo');
+        // $(this).addClass('item-menu-ativo');
+        $('#usuarios').removeClass('light-gray');
+        $(this).addClass('light-gray');
 
         $('.usuarios, .usuarios-cadastro, .usuarios-edicao').fadeOut('fast');
         $('.pagina-inicial').removeClass('oculto').fadeIn('fast');
@@ -14,8 +16,10 @@ $(document).ready(function () {
     });
 
     $('#usuarios').on('click', function () {
-        $('#pagina-inicial').removeClass('item-menu-ativo');
-        $(this).addClass('item-menu-ativo');
+        // $('#pagina-inicial').removeClass('item-menu-ativo');
+        // $(this).addClass('item-menu-ativo');
+        $('#pagina-inicial').removeClass('light-gray');
+        $(this).addClass('light-gray');
 
         $('.pagina-inicial, .usuarios-cadastro, .usuarios-edicao').fadeOut('fast');
         $('.usuarios').removeClass('oculto').fadeIn('fast');

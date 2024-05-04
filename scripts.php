@@ -36,8 +36,10 @@
 
                 $('#conteudo-pagina-inicial, #conteudo-usuarios').fadeOut('slow', function () {
                     $('.usuarios-edicao').removeClass('oculto').fadeIn('slow');
-                    $('#pagina-inicial').removeClass('item-menu-ativo');
-                    $('#usuarios').addClass('item-menu-ativo');
+                    // $('#pagina-inicial').removeClass('item-menu-ativo');
+                    // $('#usuarios').addClass('item-menu-ativo');
+                    $('#pagina-inicial').removeClass('light-gray');
+                    $('#usuarios').addClass('light-gray');
                 });
             }
         }

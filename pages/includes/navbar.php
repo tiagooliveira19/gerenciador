@@ -4,7 +4,7 @@
             <div class="col-md-4">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" id="pagina-inicial" href="./">Página Inicial</a>
+                        <a class="nav-link light-gray" aria-current="page" id="pagina-inicial" href="./">Página Inicial</a>
                     </li>
 
                     <li class="nav-item">

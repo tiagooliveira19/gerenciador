@@ -10,7 +10,7 @@
         <label class="cabecalho-label">Usuários</label>
     </div>
 
-    <div class="col-md-10 mx-auto mt-5">
+    <div class="col-md-10 mx-auto mt-5 table-responsive">
         <table class="table table-striped table-dark">
 
             <thead>
