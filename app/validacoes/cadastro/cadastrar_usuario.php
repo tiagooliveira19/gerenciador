@@ -7,25 +7,24 @@
 
     $nome = $_POST['nome'];
     $idade = $_POST['idade'];
-    $rua = $_POST['rua'];
-    $bairro = $_POST['bairro'];
+    $rua = $_POST['rua'] ?? null;
+    $bairro = $_POST['bairro'] ?? null;
+    $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
-    $biografia = $_POST['biografia'];
+    $cep = $_POST['cep'];
+    $biografia = $_POST['biografia'] ?? null;
     $imagem = $_FILES["imagem"];
     $imagem_upload = null;
 
-    /* echo '
-        <b>Nome:</b> '. $nome .' <br>
-        <b>Idade:</b> '. $idade .' <br>
-        <b>Rua:</b> '. $rua .' <br>
-        <b>Bairro:</b> '. $bairro .' <br>
-        <b>Estado:</b> '. $estado .' <br>
-        <b>Biografia:</b> '. $biografia .' <br>
-        <b>Imagem:</b> '. $imagem .' <br>
-    '; */
-
     // Se houver o upload da imagem
     if ($imagem) {
+
+        // var_dump(is_dir($diretorio)); die();
+
+        // Verifica se diretório existe, caso contrário cria o mesmo
+        if (!is_dir($diretorio)) {
+            mkdir($diretorio,0, 777);
+        }
 
         $imagem_diretorio = $diretorio . basename($_FILES["imagem"]["name"]);
         $imagem_extensao = strtolower(pathinfo($imagem_diretorio, PATHINFO_EXTENSION));
@@ -44,8 +43,8 @@
         move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem_diretorio);
     }
 
-    $insert_usuario = 'INSERT INTO usuarios (nome, idade, rua, bairro, estado, biografia, imagem, data_criacao) 
-                       VALUES ("'. $nome .'", "'. $idade .'", "'. $rua .'", "'. $bairro .'", "'. $estado .'", "'. $biografia .'", "'. $imagem_upload .'", NOW())';
+    $insert_usuario = 'INSERT INTO usuarios (nome, idade, rua, bairro, cidade, estado, cep, biografia, imagem, data_criacao) 
+                       VALUES ("'. $nome .'", "'. $idade .'", "'. $rua .'", "'. $bairro .'", "'. $cidade .'", "'. $estado .'", "'. $cep .'", "'. $biografia .'", "'. $imagem_upload .'", NOW())';
     mysqli_query($conexao, $insert_usuario);
 
     header("location: ../../../index.php?msg=cadastro");

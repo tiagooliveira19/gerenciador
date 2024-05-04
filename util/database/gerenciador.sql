@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Maio-2024 às 20:07
+-- Tempo de geração: 04-Maio-2024 às 16:16
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -31,9 +31,11 @@ CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `idade` int(11) NOT NULL,
-  `rua` varchar(255) NOT NULL,
-  `bairro` varchar(255) NOT NULL,
+  `rua` varchar(255) DEFAULT NULL,
+  `bairro` varchar(255) DEFAULT NULL,
+  `cidade` varchar(255) NOT NULL,
   `estado` varchar(255) NOT NULL,
+  `cep` varchar(150) NOT NULL,
   `biografia` longtext DEFAULT NULL,
   `imagem` varchar(255) DEFAULT NULL,
   `data_criacao` date NOT NULL

@@ -1,6 +1,9 @@
 <?php
 
     include 'config/conexao.php';
+    
+    // Libera CORS
+    header('Access-Control-Allow-Origin: *');
 
     $action = $_GET['action'] ?? '';
     $id = $_GET['id'] ?? '';

@@ -20,25 +20,35 @@
                     </div>
                 </div>
 
-                <div class="row mt-2">
+                <div class="row mt-2 endereco oculto">
                     <div class="col">
-                        <input type="text" class="form-control" name="rua" id="rua" placeholder="Rua" required>
+                        <input type="text" class="form-control" name="rua" id="rua" placeholder="Rua">
                     </div>
 
                     <div class="col">
-                        <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro" required>
+                        <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro">
                     </div>
                 </div>
 
-                <div class="row mt-2">
+                <div class="row mt-2 endereco oculto">
+                    <div class="col-6">
+                        <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade" required>
+                    </div>
+
                     <div class="col-6">
                         <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" required>
                     </div>
                 </div>
 
                 <div class="row mt-2">
+                    <div class="col-6">
+                        <input type="text" class="form-control cep" name="cep" id="cep" placeholder="CEP" required>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
                     <div class="col">
-                        <textarea class="form-control" name="biografia" id="biografia" rows="3" placeholder="Biografia..."></textarea>
+                        <textarea class="form-control" name="biografia" id="biografia" rows="3" placeholder="Biografia"></textarea>
                     </div>
                 </div>
 
