@@ -3,7 +3,7 @@ html, .main {
 }
 
 body {
-    font-family: Tahoma;
+    font-family: 'Tahoma' !important;
 }
 
 a {
